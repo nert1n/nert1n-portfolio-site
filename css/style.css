@@ -1,0 +1,57 @@
+@import url(/css/base/fonts.css);
+@import url(/css/base/nule.css);
+@import url(/css/base/header.css);
+@import url(/css/base/footer.css);
+html,
+body {
+  background-image: url(/img/);
+  background-color: white;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  font-size: 16px;
+  font-family: Squad, sans-serif;
+  margin-top: 0px;
+  color: black;
+}
+
+.container {
+  width: 80%;
+  max-width: 1150px;
+  margin: 0 auto;
+  margin-top: 25px;
+  display: block;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  min-height: 90%;
+}
+
+.tabs__nav {
+  background-color: #f0f0f0;
+}
+.tabs__holder {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.tabs__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  color: black;
+  width: 100%;
+  padding: 20px 10px;
+}
+.tabs__btn_active {
+  background-color: #bebebe;
+}
+.tabs__pane {
+  display: none;
+}
+.tabs__pane_show {
+  display: block;
+}

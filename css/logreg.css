@@ -1,0 +1,57 @@
+@import url(/css/base/fonts.css);
+@import url(/css/base/nule.css);
+body {
+  background-image: url(/img/);
+  background-color: white;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-size: 16px;
+  font-family: Squad, sans-serif;
+  margin-top: 0px;
+  color: black;
+}
+
+.container {
+  display: block;
+  width: max-content;
+  max-width: 1150px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: calc(50vh - 131px);
+}
+
+.input {
+  display: block;
+  margin: 0 auto;
+  width: 250px;
+}
+
+.text {
+  display: flex;
+  border: 1px solid black;
+  border-radius: 2px;
+  width: 100%;
+  padding: 5px;
+}
+.text:not(:first-child) {
+  margin-top: 5px;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: #dfdfdf;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.logreg {
+  display: flex;
+  justify-content: start;
+  margin-top: 3px;
+}
+
+.big__text {
+  font-size: 24px;
+}

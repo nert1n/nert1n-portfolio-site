@@ -1,0 +1,10 @@
+.footer {
+  flex: 0 0 auto;
+  background-color: #26252d;
+}
+.footer__holder {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  padding: 20px 0;
+}
