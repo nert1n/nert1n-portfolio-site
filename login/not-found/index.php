@@ -9,13 +9,14 @@
 <title>Аккаунт не знайдено!</title>
 </head>
 <body>
-    <main class="main">
+    <main class="not-found">
         <div class="container">
-            <div class="main__holder">
+            <div class="not-found__holder">
                 <h1>ТАКИЙ АККАУНТ НЕ ІСНУЄ!</h1>
                 <a href="/login">ПОВЕРНУТИСЬ</a>
             </div>
         </div>
     </main>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-01EZBTPKHC"></script>
 </body>
 </html>

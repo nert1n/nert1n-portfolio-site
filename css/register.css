@@ -2,35 +2,24 @@
 @import url(/css/base/nule.css);
 @import url(/css/base/base.css);
 .container {
-  display: block;
   width: max-content;
-  margin-right: auto;
-  margin-left: auto;
   margin-top: calc(50vh - 131px);
 }
 
-.input {
+.register__name {
+  font-size: 24px;
+}
+.register__input {
   display: block;
   margin: 0 auto;
   width: 300px;
   margin-top: 5px;
 }
-
-.text {
-  padding: 8px 10px;
-}
-
-.button {
-  padding: 10px;
+.register__button {
   margin-top: 15px;
 }
-
-.logreg {
+.register__login {
   display: flex;
   justify-content: start;
   margin-top: 4px;
-}
-
-.big__text {
-  font-size: 24px;
 }

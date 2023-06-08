@@ -1,34 +1,8 @@
 @import url(/css/base/fonts.css);
 @import url(/css/base/nule.css);
+@import url(/css/base/base.css);
 @import url(/css/base/header.css);
 @import url(/css/base/footer.css);
-html,
-body {
-  background-image: url(/img/);
-  background-color: white;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 100%;
-  font-size: 16px;
-  font-family: Squad, sans-serif;
-  margin-top: 0px;
-  color: black;
-}
-
-.container {
-  width: 80%;
-  max-width: 1150px;
-  margin: 0 auto;
-  margin-top: 25px;
-  display: block;
-}
-
-main {
-  display: flex;
-  flex-direction: column;
-  min-height: 90%;
-}
-
 .tabs__nav {
   background-color: #f0f0f0;
 }
@@ -37,21 +11,81 @@ main {
   justify-content: space-between;
   margin-top: 20px;
 }
-.tabs__btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: 700;
-  color: black;
-  width: 100%;
-  padding: 20px 10px;
-}
-.tabs__btn_active {
-  background-color: #bebebe;
+.tabs__content {
+  min-height: 90vh;
+  height: min-content;
+  background-color: #f3f3f3;
+  border-radius: 1px;
+  padding: 15px 20px;
 }
 .tabs__pane {
   display: none;
 }
 .tabs__pane_show {
   display: block;
+}
+.tabs__btn {
+  background-color: #f0f0f0;
+}
+.tabs__btn_active {
+  background-color: #bebebe;
+}
+.works__add {
+  display: flex;
+}
+.works__information {
+  display: block;
+  margin-top: 20px;
+}
+
+.add__img {
+  width: 200px;
+  height: 200px;
+}
+.add__inputs {
+  display: block;
+  width: 100%;
+  margin-top: 25px;
+  margin-left: 20px;
+}
+.add__input {
+  background-color: #d3d3d3;
+}
+.add__button {
+  margin-top: 15px;
+}
+
+.information__img {
+  width: 200px;
+  height: 200px;
+}
+.information__info {
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 15px 10px;
+  margin-left: 50px;
+}
+.information__holder {
+  display: flex;
+}
+.information__date {
+  display: flex;
+  color: #6b6b6b;
+  font-size: 12px;
+}
+.information__head {
+  display: flex;
+  color: black;
+  font-size: 24px;
+  font-weight: 700;
+  height: 100%;
+  padding-left: 5px;
+  margin-top: 10px;
+}
+.information__text {
+  display: flex;
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: 5px;
 }

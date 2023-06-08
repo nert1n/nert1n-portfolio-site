@@ -23,6 +23,15 @@ if (mb_strlen($login) < 4) {
     exit();
 }
 
+if (empty($login) || empty($pass) || empty($repeatpass) || empty($email)) {
+    echo "Заполните все поля!";
+    exit();
+}
+if ($pass != $repeatpass) {
+    echo "Пароли не совпадают!";
+    exit();
+}
+
 // Список разрешенных доменов
 $allowedDomains = array(
     "gmail.com",

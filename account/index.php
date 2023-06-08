@@ -1,3 +1,7 @@
+<?php
+require_once('../db/loader.php');
+?>
+
 <!DOCTYPE html>
 <html lang="ua">
 <head>
@@ -9,7 +13,7 @@
 <title>Аккаунт</title>
 </head>
 <body>
-    <main>
+    <main class="main">
         <div class="container">
             <div class="main__holder">
             <?php 
@@ -17,11 +21,19 @@
             ?>
                 <h1>ВИ НЕ ЗАРЕЕСТРОВАНІ!</h1>
             <?php else: ?>
-                <a class="user__login" href="/db/exit.php">Выйти</a>
+                <h1 class="main__account">Аккаунт пользователя&nbsp;<span><?= $_COOKIE["user"]?></span></h1>
+                <div class="main__content">
+                    <div class="main__info">
+                        <p>Имя: <span><?php echo $login; ?></p>
+                        <p>Емаил: <span><?php echo $email; ?></p>
+                        <a class="main__exit" href="/db/exit.php">Выйти</a>
+                    </div>
+                </div>
             <?php endif;?>
             </div>
         </div>
     </main>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-01EZBTPKHC"></script>
     <script src="/js/style.min.js"></script>
 </body>
 </html>

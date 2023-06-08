@@ -1,16 +1,10 @@
 .header__holder {
-  display: block;
-}
-.header__info {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 .header__brand {
   display: flex;
-}
-.header__sochial {
-  display: none;
   align-items: center;
 }
 .header__account {
@@ -22,45 +16,36 @@
   cursor: pointer;
 }
 
-.brand {
-  display: flex;
-  align-items: center;
+.brand__logo {
+  width: 50px;
+  height: 50px;
 }
 .brand__info {
-  color: rgb(56, 56, 56);
+  color: #575757;
   margin-left: 25px;
 }
-.brand__info h1 {
+.brand__name {
   color: black;
   font-size: 24px;
   font-weight: 700;
 }
-.brand__info p {
+.brand__works {
   margin-top: 3px;
 }
 
-.sochial__link {
-  display: flex;
-  align-items: center;
-  width: min-content;
-  height: min-content;
+.account__logo {
+  width: 40px;
+  height: 40px;
 }
-.sochial__link:not(:first-child) {
-  margin-left: 5px;
-}
-
-.account__link {
-  display: flex;
-  align-items: center;
-  color: black;
-}
-.account__link span {
-  margin-left: 5px;
+.account__button {
+  border-radius: 1px;
+  padding: 6px 6px 3px 6px;
 }
 
 .burger {
   display: none;
 }
+
 .burger.active::before {
   transform: rotate(45deg);
   top: 9px;
@@ -111,7 +96,7 @@
     margin-left: 7px;
     font-size: calc(12px + 6 * ((100vw - 320px) / 830));
   }
-  .brand__info h1 {
+  .brand__name {
     font-size: calc(18px + 6 * ((100vw - 320px) / 830));
   }
 }
